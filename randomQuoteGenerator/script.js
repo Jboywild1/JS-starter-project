@@ -6,6 +6,7 @@ const author = document.getElementById('author');
 const twitter = document.getElementById('twitter');
 const newQuote = document.getElementById('new-quote');
 const loader = document.getElementById('loader');
+const exit = document.getElementById('exit');
 
 
 
@@ -13,9 +14,9 @@ const loader = document.getElementById('loader');
 
 newQuote.addEventListener('click', newqq);
 
-
-
   function newqq () {
+
+    // exit.addEventListener('click', );
 
 
     let random = Math.floor(Math.random() * 14);
@@ -36,6 +37,16 @@ if (random <= 2){
   random = 'Hard work whispers before success shouts.';
 };
 
+let randomAuth = Math.floor(Math.random() * 8);
+
+if (randomAuth <= 2) {
+  randomAuth = 'Abraham Lincoln';
+} else if (randomAuth <= 4 && randomAuth >= 2) {
+  randomAuth = 'Musely';
+} else if (randomAuth <= 6 && randomAuth >= 4) {
+  randomAuth = 'Donald Trump';
+}
+
     quote.innerHTML = '';
     author.innerHTML = '';
 
@@ -43,9 +54,11 @@ if (random <= 2){
   let newQ = document.createElement('p');
   let auth = document.createElement('p');
 
-  auth.textContent = 'Musely';
+  auth.textContent = randomAuth;
   newQ.textContent = random;
 
   quote.appendChild(newQ);
   author.appendChild(auth);
+
+  exit.style.display = "block";
 }
