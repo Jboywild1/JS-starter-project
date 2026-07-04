@@ -11,6 +11,10 @@ const todoList = document.getElementById("todo-list");
 //   todoList.appendChild(newLi);
 // }
 
+input.addEventListener('input', () => {
+  addBTn.disabled = input.value.trim() === '';
+});
+
 addBTn.addEventListener('click', newe);
 
   function newe () {
