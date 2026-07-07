@@ -49,7 +49,7 @@ generateBtn.addEventListener('click', () => {
     return;
   }
 
-  let pass = ''
+  let pass = '';
 
 
 //THE LOOP FOR THE PASSWORD
