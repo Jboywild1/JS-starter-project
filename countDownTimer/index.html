@@ -15,12 +15,20 @@
     </div>
     <form>
       <div class="form-group">
-        <input type="number" id="minutes-input" placeholder="Minutes" min="1" max="60">
+        <input type="number" id="minutes-input" placeholder="Minutes" min="1">
         <button type="submit" id="start-btn">Start</button>
         <button type="button" id="stop-btn">Stop</button>
       </div>
     </form>
   </div>
 </div>
+
+
+  <audio id="alarm">
+    <source src="alarm.mp3" type="audio/mpeg">
+  </audio>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
